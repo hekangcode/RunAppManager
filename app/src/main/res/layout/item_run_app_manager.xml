@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_item"
+                android:layout_width="@dimen/px1320"
+                android:layout_height="@dimen/px110"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/px75"
+        android:layout_height="@dimen/px75"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px16"
+        android:layout_marginRight="@dimen/px32"
+        android:scaleType="fitXY"
+        android:src="@mipmap/image"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="道具收费的"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px34"/>
+
+    <TextView
+        android:id="@+id/tv_memory"
+        android:layout_width="@dimen/px300"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px16"
+        android:gravity="center_vertical|right"
+        android:text="内存占用：102KB"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px34"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/px16"
+        android:layout_marginStart="@dimen/px16"
+        android:background="@mipmap/line"
+        />
+
+
+</RelativeLayout>

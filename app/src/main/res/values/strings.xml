@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RunAppManager</string>
+    <string name="app_memory_rate">内存占用：%s</string>
+    <string name="run_app_count">共运行%d个应用</string>
+</resources>

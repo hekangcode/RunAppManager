@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2D313A"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px160"
+        android:layout_marginTop="@dimen/px120"
+        android:includeFontPadding="false"
+        android:text="运行应用管理"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px65"
+        />
+
+    <Button
+        android:id="@+id/btn_clear_all"
+        android:layout_width="@dimen/px250"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px300"
+        android:layout_marginTop="@dimen/px120"
+        android:background="@drawable/rect_gray_shape"
+        android:gravity="center"
+        android:text="全部停止"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px40"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_run_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_clear_all"
+        android:layout_marginRight="@dimen/px25"
+        android:layout_toLeftOf="@+id/btn_clear_all"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px30"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/px300"
+        android:layout_marginRight="@dimen/px300"
+        android:layout_marginTop="@dimen/px60"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/px100"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottom_shadow"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_no_run_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无运行应用"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/px40"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
